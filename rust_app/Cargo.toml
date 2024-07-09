@@ -1,0 +1,8 @@
+[package]
+name = "crypto_trading_bot"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+pyo3 = { version = "0.15.1", features = ["extension-module"] }
+
