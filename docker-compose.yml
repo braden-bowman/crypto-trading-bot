@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.8"
 
 services:
   trading-bot:
@@ -15,9 +15,9 @@ services:
 
   streamlit:
     build:
-      context: ./streamlit_app
+      context: .
     ports:
       - "8501:8501"
     volumes:
       - ./python_algorithms:/app/python_algorithms
-
+      - ./.streamlit/secrets.toml:/root/.streamlit/secrets.toml

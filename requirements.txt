@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+requests
+cryptography
+ed25519
+torch
+streamlit_js_eval
+scikit-learn

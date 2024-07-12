@@ -1,9 +1,13 @@
-import polars as pl
-import torch
+import json
 
 def main():
-    print("Running Algorithm 1")
+    trade_params = {
+        "symbol": "BTC-USD",
+        "quantity": 0.1,
+        "order_type": "market",
+        "side": "buy"
+    }
+    print(json.dumps(trade_params))
 
 if __name__ == "__main__":
     main()
-
